@@ -17,11 +17,12 @@ body{
 
 .entry{
     position: absolute;
-    width: 40.06944%;
-    height: 48px;
+    width: 48.26389%;
+    height: 61.03516%;
     left: 16.66667%;
     top: 16.40625%;
 
+    font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -30,6 +31,7 @@ body{
     color:  #0A3871;
     background-color: inherit;
     border: none;
+    resize: none;
 }
 
 .entry::placeholder{
@@ -38,9 +40,35 @@ body{
 
 .entry:focus{
     outline: none;
+
 } 
 
-.rectangle1{
+.entry::-webkit-scrollbar,
+.frame5::-webkit-scrollbar {
+    width: 10px;
+}
+
+.entry::-webkit-scrollbar-button:start:decrement,
+.entry::-webkit-scrollbar-button:end:increment,
+.frame5::-webkit-scrollbar-button:start:decrement,
+.frame5::-webkit-scrollbar-button:end:increment  {
+    height: 0px;
+    background-color:  transparent;
+}
+
+.entry::-webkit-scrollbar-track-piece{
+    background-color: #AAB2D5;
+    -webkit-border-radius: 16px;
+}
+
+.entry::-webkit-scrollbar-thumb:vertical{
+    height: 10px;
+    background-color: #757FB2;
+    border: 1px solid #757FB2;
+    -webkit-border-radius: 16px;
+}
+
+#rectangle1{
     position: absolute;
     width: 27.77778%;
     height: 92.1875%;
@@ -59,7 +87,7 @@ body{
 
 }
 
-.rectangle1 img{
+#muneco{
     width: 84%;
     height: auto;
     margin: 8%;
@@ -71,9 +99,24 @@ body{
     margin: 8%;
     display: flex;
     flex-direction: column;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
 }
 
-.frame5 output{
+.frame5::-webkit-scrollbar-track-piece{
+    background-color: none;
+    -webkit-border-radius: 16px;
+}
+
+.frame5::-webkit-scrollbar-thumb:vertical {
+    height: 10px;
+    background-color: #E9ECF8;
+    border: 1px solid #E9ECF8;
+    -webkit-border-radius: 16px;
+}
+
+#inTxtadv{
+    padding-bottom: 16px;
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
@@ -85,28 +128,30 @@ body{
     
 }
 
-.frame5 p{
-    padding-top: 16px;
-
+#encripted{
+    
+    height: auto;
+    font-family: inherit;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
 
     text-align: center;
-    align-self: stretch;
 
     color: #495057;
+
 }
 
 .botFrame{
     display: flex;
     flex-direction: column;
     width: 47.22222%;
-    height: auto;  
+    height: fit-content;  
 
     position: absolute;
     top: 83.10547%;
     left: 16.66667%;
+    bottom: 7.03125%;
 }
 
 .frame1::before{
@@ -134,7 +179,7 @@ body{
 
 .encrypting{
     width: 100%;
-    height: 67px;
+    padding: 3% 0;
 
     font-weight: 400;
     font-size: 16px;
@@ -142,7 +187,17 @@ body{
     text-align: center;
 
     border-radius: 24px;
-    border: 1px solid #0A3871;
+    border: 2px solid #0A3871;
+    transition: 0.5s;
+}
+
+.encrypting:hover{
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.encrypting:active{
+    transform: scale(1.02);
 }
 
 #toEncrypt{
@@ -156,6 +211,14 @@ body{
 
 footer{
     position: absolute;
-    bottom: 0%;
+    top: 97%;
+    bottom: 1%;
     left: 1%;
+}
+
+@-moz-document url-prefix(){
+   .entry{
+        scrollbar-width: thin;
+   }
+    
 }

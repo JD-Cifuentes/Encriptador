@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css/reset.css">
+    <link rel="stylesheet" href="encrypter-style.css">
+    <script src="encrypter.js"></script>
+    <script src="rev_encrypter.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <main>
+        <img class="logo" src="img/Logo (2x).png" alt="aluraLogo">
+        
+        <textarea class="entry" id="entry"  onkeydown="/[a-z]/.test(event.key) || event.preventDefault()" placeholder="Ingrese el texto aquí"  required autofocus ></textarea>
+
+        <section id="rectangle1">
+            <img id="muneco" src="img/Muñeco (2x).png" alt="muneco">
+            <div class="frame5">
+                <p id="inTxtadv">Ningún mensaje fue encontrado</p>
+                <p id="encripted" type="text" name="output" >Ingresa el texto que deseas encriptar o desencriptar a la izquierda</p>
+                  
+            </div>
+                
+        </section>
+        
+
+        <section class="botFrame">
+            
+            <p class="frame1">Solo en letras minúsculas y sin acentos</p>
+
+            <div class="frame3">
+                <input class="encrypting" id="toEncrypt" type="button" name="toEncrypt" value="Encriptar" onclick="toEncrypt()">      
+                <input class="encrypting" id="revEncrypt" type="button" name="revEncrypt" value="Desencriptar" onclick="toRevEncrypt()">
+            </div>
+        </section>
+        
+        
+        
+    </main>
+
+    <footer>
+        <p>Developed by: Juan David Cifuentes Florez</p>
+    </footer>
+</body>
+</html>
