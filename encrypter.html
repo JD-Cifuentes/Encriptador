@@ -14,7 +14,7 @@
     <main>
         <img class="logo" src="img/Logo (2x).png" alt="aluraLogo">
         
-        <textarea class="entry" id="entry"  onkeydown="/[a-z]/.test(event.key) || event.preventDefault()" placeholder="Ingrese el texto aquí"  required autofocus ></textarea>
+        <textarea class="entry" id="entry"  onkeydown="/[a-z¿¡\u0020-\u002f\u003a-\u0040\u005b-\u0060\u007b-\u007e]/.test(event.key) || event.preventDefault()" placeholder="Ingrese el texto aquí"  required autofocus ></textarea>
 
         <section id="rectangle1">
             <img id="muneco" src="img/Muñeco (2x).png" alt="muneco">
