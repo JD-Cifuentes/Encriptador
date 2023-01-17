@@ -1,7 +1,7 @@
 function toEncrypt(){
     const TXT_TO_ENCRYPT = document.getElementById("entry").value;
     let encrypted = "";
-
+    
 
     for(let char in TXT_TO_ENCRYPT){
         
@@ -27,16 +27,10 @@ function toEncrypt(){
         }
 
         for(let char in TXT_TO_ENCRYPT){
-            encrypted += CHAR_TWIST[TXT_TO_ENCRYPT[char]] || TXT_TO_ENCRYPT[char]
+            encrypted += CHAR_TWIST[TXT_TO_ENCRYPT[char]] || TXT_TO_ENCRYPT[char];
         }
 
-        document.getElementById("muneco").style.display = "none";
-        document.getElementById("inTxtadv").style.display = "none";
-        document.getElementById("encripted").style.fontSize = "24px";
-        document.getElementById("encripted").style.fontWeight = "400";
-        document.getElementById("encripted").innerHTML= encrypted;
-        document.getElementById("encripted").style.textAlign = "left";
-        document.getElementById("rectangle1").style.justifyContent = "flex-start";
+        rectangle1Twist(encrypted);
         return;
     }  
 }

@@ -13,6 +13,7 @@ body{
     height: auto;
     left: 2.77778%;
     top: 3.90625%;
+    
 }
 
 .entry{
@@ -142,6 +143,15 @@ body{
 
 }
 
+#copy{
+    position: relative;
+    display: none;
+    width: auto;
+    background-color: inherit;
+    margin: 0 8%;
+    bottom: 3.38983%;
+}
+
 .botFrame{
     display: flex;
     flex-direction: column;
@@ -155,7 +165,7 @@ body{
 }
 
 .frame1::before{
-    content: url(img/bi_exclamation-circle-fill.png);
+    content: url(../img/bi_exclamation-circle-fill.png);
     margin-right: 8px;
 }
 
@@ -187,7 +197,7 @@ body{
     text-align: center;
 
     border-radius: 24px;
-    border: 2px solid #0A3871;
+    border: 1px solid #0A3871;
     transition: 0.5s;
 }
 
@@ -205,8 +215,10 @@ body{
     color: white;
 }
 
-#revEncript{
-    background-color: #D8DFE8;
+
+#revEncrypt{
+    background-color: #F3F5FC;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 footer{

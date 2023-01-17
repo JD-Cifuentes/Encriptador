@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css/reset.css">
-    <link rel="stylesheet" href="encrypter-style.css">
-    <script src="encrypter.js"></script>
-    <script src="rev_encrypter.js"></script>
+    <link rel="stylesheet" href="../reset.css/reset.css">
+    <link rel="stylesheet" href="../stylesheets/encrypter-style.css">
+    <script src="../control_events/rectangle1_control.js"></script>
+    <script src="../control_events/encrypter.js"></script>
+    <script src="../control_events/rev_encrypter.js"></script>
+    <script src="../control_events/copy.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
     <main>
-        <img class="logo" src="img/Logo (2x).png" alt="aluraLogo">
+        <img class="logo" src="../img/Logo (2x).png" alt="aluraLogo">
         
         <textarea class="entry" id="entry"  onkeydown="/[a-z¿¡\u0020-\u002f\u003a-\u0040\u005b-\u0060\u007b-\u007e]/.test(event.key) || event.preventDefault()" placeholder="Ingrese el texto aquí"  required autofocus ></textarea>
 
         <section id="rectangle1">
-            <img id="muneco" src="img/Muñeco (2x).png" alt="muneco">
+            <img id="muneco" src="../img/Muñeco (2x).png" alt="muneco">
             <div class="frame5">
                 <p id="inTxtadv">Ningún mensaje fue encontrado</p>
                 <p id="encripted" type="text" name="output" >Ingresa el texto que deseas encriptar o desencriptar a la izquierda</p>
-                  
             </div>
-                
+            <input class="encrypting" id="copy" type="button" value="Copiar" onclick="copyTxt()">
         </section>
         
 
@@ -32,8 +33,8 @@
             <p class="frame1">Solo en letras minúsculas y sin acentos</p>
 
             <div class="frame3">
-                <input class="encrypting" id="toEncrypt" type="button" name="toEncrypt" value="Encriptar" onclick="toEncrypt()">      
-                <input class="encrypting" id="revEncrypt" type="button" name="revEncrypt" value="Desencriptar" onclick="toRevEncrypt()">
+                <input class="encrypting" id="toEncrypt" type="button"  value="Encriptar" onclick="toEncrypt()">      
+                <input class="encrypting" id="revEncrypt" type="button"  value="Desencriptar" onclick="toRevEncrypt()">
             </div>
         </section>
         
