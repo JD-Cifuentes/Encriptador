@@ -33,4 +33,5 @@ function toEncrypt(){
         rectangle1Twist(encrypted);
         return;
     }  
+    return;
 }

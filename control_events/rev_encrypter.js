@@ -30,4 +30,5 @@ function toRevEncrypt(){
         rectangle1Twist(revEncrypted);
         return;
     }  
+    return;
 }
