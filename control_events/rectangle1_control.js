@@ -11,12 +11,13 @@ function rectangle1Twist(outTxt){
         document.getElementById("muneco").style.display = "none";
     }  
     else if(window.screen.width <= 768 && window.screen.width > 375){
-        document.getElementById("main").style.height = "117.88756vh"
-        document.getElementById("frame5").style.height = "180px";
-        document.getElementById("frame5").style.margin = "32px";
+        document.getElementById("main").style.height = "115.88756vh"
+        document.getElementById("frame5").style.height = "19.2926vh";
         document.getElementById("copy").style.margin = "5px 32px 32px"; 
     }else if(window.screen.width <= 375){
-
+        document.getElementById("main").style.height = "183.81565vh"
+        document.getElementById("frame5").style.height = "63.77278vh";
+        document.getElementById("copy").style.margin = "5px 32px 32px"; 
     }
 
 

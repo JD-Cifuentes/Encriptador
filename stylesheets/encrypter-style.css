@@ -7,7 +7,7 @@ body{
 }
 
 #main{
-    height: 100vh;
+    height: 98vh;
 }
 
 #logo{
@@ -250,9 +250,9 @@ footer{
     }
 
     #logo{
-        width: 4.0364%;
+        width: 31.09px;
         height: auto;
-        margin: 74.97px 90.75521% 116px auto;
+        margin: 73.42px auto 116px 40px;
     }
     
     .entry{
@@ -264,6 +264,10 @@ footer{
     .botFrame{
         width: 89.58333%;
         margin: 0 auto 8.33333%;
+    }
+
+    .encrypting{
+        height: 64px;
     }
 
     #revEncrypt{
@@ -284,6 +288,7 @@ footer{
     }
 
     .frame5{
+        box-sizing: border-box;
         width: 81.25vw;
         height: auto;
         margin: 32px;
@@ -291,6 +296,39 @@ footer{
         overflow-y: scroll;
     }
 
+
+}
+
+@media screen and (max-width: 375px){
+    #logo{
+        width: 100%;
+        height: auto;
+        margin: 0% auto 6.00214vh;
+    }
+    .entry{
+        width: 91.46667%;
+        margin: 0 auto 5.45144%;
+        height: 32%;
+    }
+
+    .botFrame{
+        margin-bottom: 6.85959vh;
+    }
+
+    .frame3{
+        display: grid;
+        gap: 24px;
+    }
+
+    #rectangle1{
+        width: 91.46667vw;
+    }
+
+    .frame5{
+        width: 74.4vw;
+    }
+
+    
 }
 
 
