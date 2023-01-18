@@ -296,7 +296,6 @@ footer{
         overflow-y: scroll;
     }
 
-
 }
 
 @media screen and (max-width: 375px){
@@ -326,11 +325,8 @@ footer{
 
     .frame5{
         width: 74.4vw;
-    }
-
-    
+    }    
 }
-
 
 @-moz-document url-prefix(){
    .entry, .frame5{

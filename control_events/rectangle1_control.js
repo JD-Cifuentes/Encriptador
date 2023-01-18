@@ -19,8 +19,7 @@ function rectangle1Twist(outTxt){
         document.getElementById("frame5").style.height = "63.77278vh";
         document.getElementById("copy").style.margin = "5px 32px 32px"; 
     }
-
-
+    
     return;
 }
 
