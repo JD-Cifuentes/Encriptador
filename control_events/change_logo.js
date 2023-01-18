@@ -5,12 +5,12 @@ if(RELOAD_LOGO){
 
 function logoSize() {
     if(window.screen.width <= 768 && window.screen.width > 375){
-        RELOAD_LOGO.src = "./img/Logo_tab_1x.png";    
+        RELOAD_LOGO.src = "../img/Logo_tab_1x.png";    
         return;
     }
 
     if(window.screen.width <= 375){
-        RELOAD_LOGO.src = "./img/Logo_cell_2x.png";    
+        RELOAD_LOGO.src = "../img/Logo_cell_2x.png";    
         return;
     }
     
