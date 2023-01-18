@@ -13,11 +13,11 @@ function rectangle1Twist(outTxt){
     else if(window.screen.width <= 768 && window.screen.width > 375){
         document.getElementById("main").style.height = "115.88756vh"
         document.getElementById("frame5").style.height = "19.2926vh";
-        document.getElementById("copy").style.margin = "5px 32px 32px"; 
+        document.getElementById("copy").style.margin = "5px 4.65116vw 4.65116vw"; 
     }else if(window.screen.width <= 375){
         document.getElementById("main").style.height = "183.81565vh"
         document.getElementById("frame5").style.height = "63.77278vh";
-        document.getElementById("copy").style.margin = "5px 32px 32px"; 
+        document.getElementById("copy").style.margin = "5px 8.53333vw 8.53333vw"; 
     }
     
     return;

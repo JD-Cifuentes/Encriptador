@@ -3,6 +3,8 @@
     if(RELOAD_LOGO){
         logoSize();
     }
+
+    alert(window.screen.width + " x " + window.screen.width);
     
     function logoSize() {
         if(window.screen.width <= 768 && window.screen.width > 375){
